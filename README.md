@@ -1,41 +1,38 @@
 # EAMarketX
 
-[Visit the live site](https://eamarketx.com)
+eamarketx.com
 
-EAMarketX is a Chinese-first EA marketplace for trading robots, MQL files, SET presets, indicators, scripts, and trading tools.
+EAMarketX 是一个面向中文用户的 EA 交易市场，支持 EA、MQL 文件、SET 参数、指标、脚本和交易工具的发布与购买。
 
-## What it offers
+## 主要能力
 
-- Sellers can publish EA files with covers, screenshots, categories, versions, and pricing.
-- Buyers can purchase, download, favorite, and review products.
-- Purchased downloads stay available even if the original listing is later removed.
-- The platform is designed around escrow-style checkout and seller payout controls.
+- 卖家可以发布商品，添加封面、截图、版本号、分类和价格。
+- 买家可以购买、下载、收藏和评价商品。
+- 已购买的文件会长期保留，即使原商品后续下架，购买记录依然可查。
+- 平台采用平台托管与卖家结算的方式，便于管理交易、手续费和售后。
 
-## Safety model
+## 安全与结算
 
 ```ts
-// Platform fee is fixed at 5%.
+// 平台固定收取 5% 手续费，卖家结算 95%。
 const platformFeeRate = 0.05;
 const sellerPayoutRate = 0.95;
 ```
 
-Transactions are designed to go through the platform first so the system can support:
+平台会记录订单、购买权限、收益和提现申请，避免买卖双方直接私下交易带来的混乱。
 
-- automatic fee collection
-- purchase records
-- seller balance tracking
-- withdrawal review
-- refund and dispute handling
-
-## Tech stack
+## 技术栈
 
 - Next.js
 - Supabase
 - Render
-- USDT BEP20 payments
+- USDT BEP20
 
-## Links
+## 站点地址
 
-- Website: https://eamarketx.com
-- GitHub: https://github.com/badhandsome978/eamarketx
+eamarketx.com
+
+## GitHub
+
+https://github.com/badhandsome978/eamarketx
 
